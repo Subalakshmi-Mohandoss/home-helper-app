@@ -1,0 +1,176 @@
+.app-cont {
+    display: flex;
+    height: 100vh; 
+    /* background-color: ; */
+}
+.white-background {
+  background-color: white;
+  background-color:rgb(218, 206, 231);
+}
+.p1{
+  display: flex;
+  display: inline;
+  width: 250px;
+  justify-content: space-between;
+}
+.middle{
+  color: rgb(34, 28, 71);
+  background-color: white;
+  height: 300px;
+}
+.part{
+  height: 50px;
+}
+  .card{
+    border-radius: 70%;
+    margin-top: 20px;
+  }
+.pics{
+  height: 200px;
+  width: 300px;
+}
+.grid1{
+   display: flex;
+   justify-content: space-around; 
+   justify-content: center;
+   background-color:white;
+   height: 300px;
+  } 
+.p2{
+  width: 430px;
+  height:  250px;
+}
+img{
+  height:250px;
+  border-radius: 10%;
+  /* width: 250px; */
+}
+.half-page {
+  flex: 1;
+  overflow: hidden;
+}
+.app-container1 {
+    display: flex;
+    background-image:url("https://t4.ftcdn.net/jpg/05/97/49/09/360_F_597490918_dugDbSuqx6YSRmCaYiZJ6pCr37cXK3Rv.jpg");
+    background-size: cover; 
+    background-position: center; 
+  }
+  .main{
+  height: 1500px; 
+
+}.foot
+{
+    width: 30px;
+    height:30px;
+}
+.footone
+{
+    display:flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.ft
+{
+    justify-content: center;
+}
+.half-page1 {
+  flex: 1;
+  overflow: hidden;
+  margin-top: 100px;
+  /* display: flex;
+  align-items: center; */
+}
+#nav {
+        background-image: url("https://www.caporasoandpartnerslawofficepanama.com/img/articles/legal-aspects-in-home-sales.jpeg");
+        background-size: cover; 
+        width: 700px;
+        background-position: center; 
+        height: 100vh; 
+        color:blueviolet;
+}  
+/* p{
+  color:rgb(47, 24, 92);
+} */
+.box {
+text-align: center;
+margin-top: 120px;
+}
+.Nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem; 
+  background-color:white;
+  color:rgb(43, 220, 226);
+  color:rgb(119, 84, 30);
+}
+#i1{
+  background-image:element("painter1.jpg");
+}
+ul {
+  display: flex; 
+  list-style: none;
+}
+
+li {
+  padding-left: 1rem; 
+  padding-inline-end: 2rem;
+}
+.items{
+  display: flex;
+  flex-direction: column;
+}
+.icons {
+  width: 30px;
+  height: 30px;
+}
+.ft
+{
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    height: 200px;
+    background-color: white;
+    color: rgb(34, 28, 71);
+}
+p {
+  margin-top:10px;
+}
+.line1{
+  width: 10px;
+  height: 5px;
+  background-color:cornflowerblue;
+  margin: 6px 0;
+}
+.line2{
+  width: 10px;
+  height: 5px;
+  background-color: cornflowerblue;
+  margin: 6px 0;
+}
+.line3{
+  width: 10px;
+  height: 5px;
+  background-color: cornflowerblue;
+  margin: 6px 0;
+}
+.clean{
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+    display: inline;
+    align-items:flex-start;
+}
+.cleaning{
+    display: flex;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.cl{
+    size: 100px;
+}

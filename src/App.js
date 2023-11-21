@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes,Route} from "react-router-dom";
+import Log from "./file/Log";
+import Navbar from "./file/Navbar";
+import "./Style.css";
+import SignUp from "./file/Signup";
+import Main from "./file/Main";
+import Page from "./file/Page";
+import Seeker from "./file/Seeker";
+// import Mid from "./file/Mid";
+// import Products from "./file/Products";
+// import Grids from "./file/Grids"
+// import { RouterProvider } from 'react-router-dom'
+// import Router from "./file/Router";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page"> 
+      <Routes>
+        <Route path="/" element={<Page/>}></Route>
+        <Route path="Log" element={<Log />} />
+        <Route path="Signup" element={<SignUp />} />
+        <Route path="Seeker" element={<Seeker/>}/>
+      </Routes>
+      {/* <Main/>
+      <Footer/> */}
     </div>
   );
 }
-
 export default App;
