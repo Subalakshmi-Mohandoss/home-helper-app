@@ -1,18 +1,17 @@
-import * as React from "react";
+import React, { useState } from 'react';
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-// import Link from "@mui/material/Link";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+// import PhotoUpload from "./PhotoUpload";
 
 function Copyright(props) {
   return (
@@ -32,17 +31,25 @@ function Copyright(props) {
   );
 }
 
-const defaultTheme = createTheme();
+function Seeker() {
+  const [selectedFiles, setSelectedFiles] = useState([]);
 
-export default function Seeker() {
+  const handlePhotoUpload = (files) => {
+    
+    setSelectedFiles(files);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      email: data.get("email"),
-      phonenumber: data.get("phone number"),
-      createpassword: data.get("create password"),
-      confirmpassword: data.get("confirm password"),
+      firstName: data.get('firstName'),
+      lastName: data.get('lastName'),
+      email: data.get('email'),
+      phoneNumber: data.get('phone number'),
+      createPassword: data.get('create password'),
+      confirmPassword: data.get('confirm password'),
+      selectedFiles,
     });
   };
 
@@ -148,14 +155,16 @@ export default function Seeker() {
                 />
               </Grid>
             </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Sign Up
-            </Button>
+            <Link to="/Log">
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+              >
+                Sign Up
+              </Button>
+            </Link>
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link to="/Log">Already have an account? Sign in</Link>
@@ -165,6 +174,8 @@ export default function Seeker() {
         </Box>
         <Copyright sx={{ mt: 5 }} />
       </Container>
-    </div>
+</div>
   );
 }
+
+export default Seeker;
